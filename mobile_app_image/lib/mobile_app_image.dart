@@ -59,9 +59,11 @@ class app_image extends StatelessWidget {
                   labelText: 'Enter Password',
                 ),
               ),
-            )
-
-            ElevatedButton(onPressed: (){}, style: ButtonStyle(shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)))), child: Text ("login"),),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(onPressed: (){}, style: ButtonStyle(shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)))), child: Text ("login"),),
+            ),
           ],
         )
       );
