@@ -20,12 +20,61 @@ class project_one extends StatelessWidget {
               child: Icon(Icons.menu),
             ),
           ],
+        ),
+        body: Column(
+          children: [
+            Container(
+              height: 250,
+              width: 350,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: Colors.lime,
+                border: Border.all(),
+                borderRadius: BorderRadius.circular(25)
+              ),
+              child: Column(
+                children: [
+                  Text("WELCOME"),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: TextFormField(
+                      decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.login_outlined),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            width: 3, color: Colors.black54
+                          ),
+                        ),
+                        hintText: '',
+                        labelText: 'Enter User Name'
+                        )
+                      ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: TextFormField(
+                      decoration: const InputDecoration(
+                        prefixIcon: Icon(Icons.password_outlined),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            width: 3, color: Colors.black54
+                          ),
+                        ),
+                        hintText: '',
+                        labelText: 'Enter Password'
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ElevatedButton(onPressed: (){}, style: ButtonStyle(shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)))), child: Text("Login"),),
+                  )
+                ],
+              ),
+
+            )
+          ],
         )
-            body: Column(
-              children: [
-                
-      ],
-    )
     );
   }
 }
