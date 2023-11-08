@@ -7,8 +7,8 @@ class app_image extends StatelessWidget {
       return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.lightBlue,
-          leading: Icon(Icons.menu),
-          title: Center(child: Text("Login Demo \(Image)")),
+          leading: Icon(Icons.menu,size: 25,color: Colors.cyan,),
+          title: Center(child: Text("Login",style: TextStyle(color: Colors.cyan,fontSize: 35,fontWeight: FontWeight.bold),)),
           actions: [
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -24,7 +24,7 @@ class app_image extends StatelessWidget {
             ),
           ],
         ),
-        body: Column(
+        body: Column (
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -63,6 +63,25 @@ class app_image extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(onPressed: (){}, style: ButtonStyle(shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)))), child: Text ("login"),),
+            ),
+
+
+            Container(
+              height: 100,
+              width: 300,
+              //color: Colors.cyan,
+              decoration: BoxDecoration(
+                color: Colors.cyan,
+                border: Border.all(),
+                //borderRadius: BorderRadius.circular(25),
+                image: DecorationImage(
+                    image: AssetImage("assets/img/flower.jpeg"),
+                  fit: BoxFit.fill
+
+                ),
+                shape: BoxShape.circle
+              ),
+              child: Center(child: Text("ok")),
             ),
           ],
         )

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'mobile_app_image.dart';
+//import 'package:mobile_app_image/project_1.dart';
+//import 'mobile_app_image.dart';
+import 'project_1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const app_image(),
+      home: const project_one(),
     );
   }
 }
