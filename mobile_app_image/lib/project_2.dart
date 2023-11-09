@@ -55,16 +55,55 @@ class project_two extends StatelessWidget {
                             ),
                           ),
                           SizedBox(width: 10,),
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: 325.0),
-                            child: Image(
+                          Stack(
+                            children: [
+                                 Padding(
+                                   padding: const EdgeInsets.only(bottom: 320.0),
+                                   child: Image(
                                 image: AssetImage("assets/img/car2.jpeg"),
                                 width: 80,
                                 height: 80,
                                 fit:BoxFit.cover,
-                            ),
+                                   ),
+                                 ),
+                              Positioned(
+                                left: 10,
+                                top: 10,
+                                child: Text(
+                                  'A',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 30,
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 10,),
+                          Stack(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(bottom: 320.0),
+                                child: Image(
+                                  image: AssetImage("assets/img/car2.jpeg"),
+                                  width: 80,
+                                  height: 80,
+                                  fit:BoxFit.cover,
+                                ),
+                              ),
+                              Positioned(
+                                left: 10,
+                                top: 10,
+                                child: Text(
+                                  'B',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 30,
+                                  ),
+                                ),
+                              )
+                            ],
                           )
-
                         ],
                       )
                     ),
