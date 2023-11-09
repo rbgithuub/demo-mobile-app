@@ -38,80 +38,94 @@ class project_two extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    height: 450,
+                    height:225,
                     width: 450,
                     color: Colors.black38,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Row(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: 200.0),
-                            child: Image(
-                              image: AssetImage("assets/img/car2.jpeg"),
-                              width: 200,
-                              height: 200,
-                              fit:BoxFit.cover,
-                            ),
-                          ),
-                          SizedBox(width: 10,),
-                          Stack(
-                            children: [
-                                 Padding(
-                                   padding: const EdgeInsets.only(bottom: 320.0),
-                                   child: Image(
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Image(
                                 image: AssetImage("assets/img/car2.jpeg"),
-                                width: 80,
-                                height: 80,
+                                width: 200,
+                                height: 200,
                                 fit:BoxFit.cover,
-                                   ),
-                                 ),
-                              Positioned(
-                                left: 10,
-                                top: 10,
-                                child: Text(
-                                  'A',
-                                  style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 30,
-                                  ),
-                                ),
-                              )
-                            ],
-                          ),
-                          SizedBox(width: 10,),
-                          Stack(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(bottom: 320.0),
-                                child: Image(
-                                  image: AssetImage("assets/img/car2.jpeg"),
-                                  width: 80,
-                                  height: 80,
-                                  fit:BoxFit.cover,
-                                ),
                               ),
-                              Positioned(
-                                left: 10,
-                                top: 10,
-                                child: Text(
-                                  'B',
-                                  style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 30,
-                                  ),
+                            ),
+                            Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    //SizedBox(width: 10,),
+                                    Image(
+                                      image: AssetImage("assets/img/car2.jpeg"),
+                                      width:80,
+                                      height:80,
+                                      fit:BoxFit.cover,
+                                    ),
+                                    SizedBox(width: 10,),
+                                    Image(
+                                      image: AssetImage("assets/img/car2.jpeg"),
+                                      width:80,
+                                      height:80,
+                                      fit:BoxFit.cover,
+                                    ),
+                                  ],
                                 ),
-                              )
-                            ],
-                          )
-                        ],
-                      )
+                                Row(
+                                  children: [
+                                    //SizedBox(width: 10,),
+                                    Image(
+                                      image: AssetImage("assets/img/car2.jpeg"),
+                                      width:80,
+                                      height:80,
+                                      fit:BoxFit.cover,
+                                    ),
+                                    SizedBox(width: 10,),
+                                    Image(
+                                      image: AssetImage("assets/img/car2.jpeg"),
+                                      width:80,
+                                      height:80,
+                                      fit:BoxFit.cover,
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
+
+                  ),
+                  Container(
+                    height:225,
+                    width: 450,
+                    color: Colors.black38,
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Image(
+                                image: AssetImage("assets/img/car2.jpeg"),
+                                width: 200,
+                                height: 200,
+                                fit:BoxFit.cover,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+
                   ),
                 ],
-
               ),
-            )
+            ),
           ],
         ),
       ),
