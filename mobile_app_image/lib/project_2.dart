@@ -35,13 +35,42 @@ class project_two extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 450,
-                width: 450,
-                color: Colors.black38,
-                child: Column (
-                  
-                ),
+              child: Column(
+                children: [
+                  Container(
+                    height: 450,
+                    width: 450,
+                    color: Colors.black38,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 200.0),
+                            child: Image(
+                              image: AssetImage("assets/img/car2.jpeg"),
+                              width: 200,
+                              height: 200,
+                              fit:BoxFit.cover,
+                            ),
+                          ),
+                          SizedBox(width: 10,),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 325.0),
+                            child: Image(
+                                image: AssetImage("assets/img/car2.jpeg"),
+                                width: 80,
+                                height: 80,
+                                fit:BoxFit.cover,
+                            ),
+                          )
+
+                        ],
+                      )
+                    ),
+                  ),
+                ],
+
               ),
             )
           ],
