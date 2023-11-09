@@ -6,11 +6,11 @@ class project_one extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            backgroundColor: Colors.blueGrey,
-            leading: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Image.asset("assets/img/gt_logo.png")
-            ),
+          backgroundColor: Colors.blueGrey,
+          leading: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset("assets/img/gt_logo.png")
+          ),
           title: Center(child: Text("GT")),
           actions: [
             Padding(
@@ -28,9 +28,9 @@ class project_one extends StatelessWidget {
                   height: 250,
                   width: 350,
                   decoration: BoxDecoration(
-                    color: Colors.lime,
-                    border: Border.all(),
-                    borderRadius: BorderRadius.circular(25)
+                      color: Colors.lime,
+                      border: Border.all(),
+                      borderRadius: BorderRadius.circular(25)
                   ),
                   child: Column(
                     children: [
@@ -38,30 +38,30 @@ class project_one extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: TextFormField(
-                          decoration: InputDecoration(
-                            prefixIcon: Icon(Icons.login_outlined),
-                            enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
-                                width: 3, color: Colors.black54
-                              ),
-                            ),
-                            hintText: '',
-                            labelText: 'Enter User Name'
+                            decoration: InputDecoration(
+                                prefixIcon: Icon(Icons.login_outlined),
+                                enabledBorder: OutlineInputBorder(
+                                  borderSide: BorderSide(
+                                      width: 3, color: Colors.black54
+                                  ),
+                                ),
+                                hintText: '',
+                                labelText: 'Enter User Name'
                             )
-                          ),
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: TextFormField(
                           decoration: const InputDecoration(
-                            prefixIcon: Icon(Icons.password_outlined),
-                            enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
-                                width: 3, color: Colors.black54
+                              prefixIcon: Icon(Icons.password_outlined),
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                    width: 3, color: Colors.black54
+                                ),
                               ),
-                            ),
-                            hintText: '',
-                            labelText: 'Enter Password'
+                              hintText: '',
+                              labelText: 'Enter Password'
                           ),
                         ),
                       ),
@@ -75,52 +75,56 @@ class project_one extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 150,
-                width: 350,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: Colors.cyan,
-                  border: Border.all(),
-                  borderRadius: BorderRadius.circular(25,
-                )
-                ),
-                child: Row (
-                 children: [
-                   Column(
-                     children: [
-                       Padding(
-                         padding: const EdgeInsets.all(8.0),
-                         child: Image(image: AssetImage("assets/img/gt_logo_1.png")),
-                       )
-                     ],
-                   ),
-                   Column(
-                     children: [
-                       Padding(
-                         padding: const EdgeInsets.all(8.0),
-                         child: Container(
-                             width: 100,
-                             child: Text("All the best for your Internship.",overflow: TextOverflow.ellipsis,maxLines: 3,)),
-                       )
-                     ],
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                    height: 150,
+                    width: 450,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                        color: Colors.cyan,
+                        border: Border.all(),
+                        borderRadius: BorderRadius.circular(25,
+                        )
+                    ),
+                    child: Row (
+                      children: [
+                        Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Image(image: AssetImage("assets/img/gt_logo_1.png")),
+                            )
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                  width: 100,
+                                  child: Text("All the best for your Internship.",overflow: TextOverflow.ellipsis,maxLines: 3,)),
+                            )
+                          ],
 
-                   ),
-                   Column(
-                     children: [
-                       Container(child: Padding(
-                         padding: const EdgeInsets.all(8.0),
-                         child: Image(image: AssetImage("assets/img/gt_logo_2.png")),
-                       ))
-                     ],
-                   )
-                     ],
-                   )
-    )
+                        ),
+                        Column(
+                            children: [
+                              ClipOval(
+                                child: Container(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Image(image: AssetImage("assets/img/gt_logo_2.png"),),
+                                  )
+                                ),
+                              )
+                            ],
+                        )
+                      ],
+                    )
+                )
             )
-                 ],
-    )
+          ],
+        )
     );
   }
 }
