@@ -18,6 +18,34 @@ class project_two extends StatelessWidget {
               fit: BoxFit.cover,
           ),
         ),
+        child: Column (
+          children: [
+            Center(
+              child: Padding(
+                padding: const EdgeInsets.only(top: 90.0),
+                child: ClipOval(
+                  child: Image.asset(
+                      "assets/img/car2.jpeg",
+                  width: 200,
+                  height: 200,
+                  fit: BoxFit.cover,
+                  )
+                 ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 450,
+                width: 450,
+                color: Colors.black38,
+                child: Column (
+                  
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
