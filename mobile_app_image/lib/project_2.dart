@@ -189,7 +189,7 @@ class project_two extends StatelessWidget {
                                         prefixIcon: Icon(Icons.label),
                                         labelStyle: TextStyle (
                                             color: Colors.greenAccent,
-                                            fontSize: 24,
+                                            fontSize: 18,
                                         ),
                                         enabledBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
@@ -197,7 +197,7 @@ class project_two extends StatelessWidget {
                                           ),
                                         ),
                                         hintText: '',
-                                        labelText: 'Enter an Option:'
+                                        labelText: 'Enter an Option from above:'
                                     ),
                                   ),
                                 ),
