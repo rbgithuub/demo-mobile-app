@@ -183,7 +183,7 @@ class project_two extends StatelessWidget {
                             Row(
                               children: [
                                 SizedBox(
-                                  width: 200,
+                                  width: 250,
                                   child: TextFormField(
                                     decoration: InputDecoration(
                                         prefixIcon: Icon(Icons.label),
