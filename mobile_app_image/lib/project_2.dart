@@ -8,7 +8,6 @@ class project_two extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-
       body: Container(
         height: double.infinity,
         width: double.infinity,
@@ -40,7 +39,7 @@ class project_two extends StatelessWidget {
                   Container(
                     height:225,
                     width: 450,
-                    color: Colors.black38,
+                    color: Colors.black54,
                     child: Column(
                       children: [
                         Row(
@@ -59,36 +58,77 @@ class project_two extends StatelessWidget {
                                 Row(
                                   children: [
                                     //SizedBox(width: 10,),
-                                    Image(
-                                      image: AssetImage("assets/img/car2.jpeg"),
-                                      width:80,
-                                      height:80,
-                                      fit:BoxFit.cover,
+                                    Container(
+                                        height: 80,
+                                        width: 80,
+                                        decoration: BoxDecoration(
+                                          color: Colors.cyan,
+                                          border: Border.all(),
+                                          image: DecorationImage(
+                                              image: AssetImage("assets/img/car2.jpeg"),
+                                              fit: BoxFit.fill
+                                          ),
+                                        ),
+                                        child: Center(child: Text(
+                                            "A",
+                                          style: TextStyle(fontSize: 40),
+                                        )
+                                        )
                                     ),
                                     SizedBox(width: 10,),
-                                    Image(
-                                      image: AssetImage("assets/img/car2.jpeg"),
-                                      width:80,
-                                      height:80,
-                                      fit:BoxFit.cover,
+                                    Container(
+                                      height: 80,
+                                      width: 80,
+                                      decoration: BoxDecoration(
+                                        color: Colors.cyan,
+                                        border: Border.all(),
+                                        image: DecorationImage(
+                                          image: AssetImage("assets/img/car2.jpeg"),
+                                          fit: BoxFit.fill
+                                        ),
+                                      ),
+                                      child: Center(child: Text(
+                                        "B",
+                                        style: TextStyle(fontSize: 40),
+                                      ),)
                                     ),
                                   ],
                                 ),
                                 Row(
                                   children: [
                                     //SizedBox(width: 10,),
-                                    Image(
-                                      image: AssetImage("assets/img/car2.jpeg"),
-                                      width:80,
-                                      height:80,
-                                      fit:BoxFit.cover,
+                                    Container(
+                                        height: 80,
+                                        width: 80,
+                                        decoration: BoxDecoration(
+                                          color: Colors.cyan,
+                                          border: Border.all(),
+                                          image: DecorationImage(
+                                              image: AssetImage("assets/img/car2.jpeg"),
+                                              fit: BoxFit.fill
+                                          ),
+                                        ),
+                                        child: Center(child: Text(
+                                          "C",
+                                          style: TextStyle(fontSize: 40),
+                                        ))
                                     ),
                                     SizedBox(width: 10,),
-                                    Image(
-                                      image: AssetImage("assets/img/car2.jpeg"),
-                                      width:80,
-                                      height:80,
-                                      fit:BoxFit.cover,
+                                    Container(
+                                        height: 80,
+                                        width: 80,
+                                        decoration: BoxDecoration(
+                                          color: Colors.cyan,
+                                          border: Border.all(),
+                                          image: DecorationImage(
+                                              image: AssetImage("assets/img/car2.jpeg"),
+                                              fit: BoxFit.fill
+                                          ),
+                                        ),
+                                        child: Center(child: Text(
+                                          "D",
+                                          style: TextStyle(fontSize: 40),
+                                        ),)
                                     ),
                                   ],
                                 ),
@@ -103,7 +143,7 @@ class project_two extends StatelessWidget {
                   Container(
                     height:225,
                     width: 450,
-                    color: Colors.black38,
+                    color: Colors.black54,
                     child: Column(
                       children: [
                         Row(
@@ -117,12 +157,29 @@ class project_two extends StatelessWidget {
                                 fit:BoxFit.cover,
                               ),
                             ),
+                            Row(
+                              children: [
+                                Text(
+                                  "All the Best! \nHappy Journey!",
+                                  maxLines: 3,
+                                  style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold, color: Colors.greenAccent),
+                                ),
+                              ],
+                            )
                           ],
                         ),
                       ],
                     ),
-
                   ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: 150,
+                      width: 400,
+                      color: Colors.cyanAccent,
+                      
+                    ),
+                  )
                 ],
               ),
             ),
@@ -132,26 +189,3 @@ class project_two extends StatelessWidget {
     );
   }
 }
-
-// class RoundedFrameImage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//       width: 200,
-//       height: 200,
-//       decoration: BoxDecoration(
-//         color: Colors.grey,
-//         shape: BoxShape.circle,
-//       ),
-//       child: ClipRRect(
-//         borderRadius: BorderRadius.circular(100),
-//         child: Image.asset(
-//           'assets/img/car2.jpeg',
-//           width: 200,
-//           height: 200,
-//         ),
-//       ),
-//     );
-//   }
-// }
-
