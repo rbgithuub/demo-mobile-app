@@ -174,10 +174,46 @@ class project_two extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
-                      height: 150,
+                      height: 70,
                       width: 400,
-                      color: Colors.cyanAccent,
-                      
+                      color: Colors.black54,
+                      alignment: Alignment.topLeft,
+                      child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                SizedBox(
+                                  width: 200,
+                                  child: TextFormField(
+                                    decoration: InputDecoration(
+                                        prefixIcon: Icon(Icons.label),
+                                        labelStyle: TextStyle (
+                                            color: Colors.greenAccent,
+                                            fontSize: 24,
+                                        ),
+                                        enabledBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                            width: 4, color: Colors.blueAccent,
+                                          ),
+                                        ),
+                                        hintText: '',
+                                        labelText: 'Enter an Option:'
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Row(
+                                    children: [
+                                      ElevatedButton(onPressed: (){}, style: ButtonStyle(shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0)))),child: Text("Submit"),)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+
+                          ],
+                      ),
                     ),
                   )
                 ],
