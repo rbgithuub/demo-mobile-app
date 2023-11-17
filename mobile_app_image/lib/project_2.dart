@@ -172,17 +172,22 @@ class project_two extends StatelessWidget {
                                             ),
                                           child: Column(
                                             children: [
-                                              Container(
-                                                width: 200,
-                                                height: 125,
-                                                decoration: BoxDecoration(
-                                                  border: Border(
-                                                    bottom: BorderSide(
-                                                      width: 5.0,
-                                                    )
+                                              ClipRRect(
+                                                   borderRadius: BorderRadius.circular(8.0),
+                                                child: Container(
+                                                  width: 200,
+                                                  height: 125,
+                                                  decoration: BoxDecoration(
+                                                    border: Border(
+                                                      bottom: BorderSide(width: 5.0),
+                                                    ),
                                                   ),
-                                                ),
-                                                child: Image.asset("assets/img/car2.jpeg",
+                                                  child: ClipRRect(
+                                                    borderRadius: BorderRadius.circular(20),
+                                                    child: Image.asset(
+                                                      "assets/img/car2.jpeg",
+                                                    ),
+                                                  ),
                                                 ),
                                               ),
                                               Container(
