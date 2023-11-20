@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_app_image/botnavi.dart';
+//import 'package:mobile_app_image/botnavi.dart';
 //import 'package:mobile_app_image/project_1.dart';
 import 'package:mobile_app_image/project_nav_frm1.dart';
 //import 'package:mobile_app_image/project_1.dart';
 //import 'mobile_app_image.dart';
-import 'botnavi.dart';
-//import 'project_navigation.dart';
+//import 'botnavi.dart';
+import 'project_navigation.dart';
+import 'project_nav_frm2.1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  botnavi()
+      home:  project_navigation()
     );
   }
 }

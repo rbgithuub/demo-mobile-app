@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app_image/project_nav_frm1.dart';
 import 'package:mobile_app_image/project_nav_frm2.dart';
+import 'package:mobile_app_image/project_nav_frm2.1.dart';
+import 'package:mobile_app_image/project_nav_frm2.2.dart';
 
 class project_navigation extends StatefulWidget {
   project_navigation({super.key});
@@ -13,8 +15,9 @@ class _navigationState extends State<project_navigation>{
   int _index=0;
 
   final pages = [
-    project_nav_frm1(),
-    Center(child: Text("NavigationForm")),
+    //Center(child: Text("NavigationForm")),
+    project_nav_frm2_1(),
+    project_nav_frm2_2(),
   ];
 
   void tap(index) {
