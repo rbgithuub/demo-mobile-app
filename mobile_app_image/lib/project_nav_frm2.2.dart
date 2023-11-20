@@ -8,6 +8,9 @@ class project_nav_frm2_2 extends StatelessWidget {
       appBar: AppBar(
         leading: Icon(Icons.arrow_back,size: 25,color: Colors.black54,),
         title: Center(child: Text("Menu",style: TextStyle(color: Colors.cyan,fontSize: 35,fontWeight: FontWeight.bold),),),
+        actions: [
+          Icon(Icons.menu),
+        ],
       ),
       body: Column(
         children: [

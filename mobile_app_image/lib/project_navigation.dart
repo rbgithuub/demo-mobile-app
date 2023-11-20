@@ -15,9 +15,10 @@ class _navigationState extends State<project_navigation>{
   int _index=0;
 
   final pages = [
-    //Center(child: Text("NavigationForm")),
     project_nav_frm2_1(),
+    //Center(child: Text("NavigationForm")),
     project_nav_frm2_2(),
+    //project_nav_frm2_2(),
   ];
 
   void tap(index) {
@@ -33,7 +34,7 @@ class _navigationState extends State<project_navigation>{
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home),label:'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.person),label:'Reports'),
+          BottomNavigationBarItem(icon: Icon(Icons.report),label:'Reports'),
         ],
     currentIndex: _index,
     onTap: tap,

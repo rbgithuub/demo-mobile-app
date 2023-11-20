@@ -6,7 +6,9 @@ import 'package:mobile_app_image/project_nav_frm1.dart';
 //import 'mobile_app_image.dart';
 //import 'botnavi.dart';
 import 'project_navigation.dart';
+import 'project_nav_frm1.dart';
 import 'project_nav_frm2.1.dart';
+import 'project_nav_frm2.2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,7 +42,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  project_navigation()
+      home:  project_nav_frm1()
     );
   }
 }
