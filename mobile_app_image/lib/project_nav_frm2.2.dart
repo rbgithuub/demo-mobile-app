@@ -14,33 +14,40 @@ class project_nav_frm2_2 extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Text("Reports"),
+          Text("Employee Report"),
           Center(
-            child: ElevatedButton(
-              onPressed: (){},
-              style: ButtonStyle(shape: MaterialStateProperty.all(RoundedRectangleBorder())),
-              child: Text("Report 1"),
-            ),
-          ),
-          Center(
-            child: ElevatedButton(
-              onPressed: (){},
-              style: ButtonStyle(shape: MaterialStateProperty.all(RoundedRectangleBorder())),
-              child: Text("Report 2"),
+            child: ListTile(
+              leading: Icon(Icons.person),
+              title: Text('Report 1 - HR'),
+              trailing: Icon(Icons.navigate_next),
             ),
           ),
 
+          Center(
+            child: ListTile(
+              leading: Icon(Icons.person),
+              title: Text('Report 2 - Finance'),
+              trailing: Icon(Icons.navigate_next),
+            ),
+          ),
+
+          Center(
+            child: ListTile(
+              leading: Icon(Icons.person),
+              title: Text('Report 3 - IT'),
+              trailing: Icon(Icons.navigate_next),
+            ),
+            ),
           Text("Help"),
           Center(
-            child: ElevatedButton(
-              onPressed: (){},
-              style: ButtonStyle(shape: MaterialStateProperty.all(RoundedRectangleBorder())),
-              child: Text("Logout"),
+            child: ListTile(
+              leading: Icon(Icons.person),
+              title: Text('Report 2 - Finance'),
+              trailing: Icon(Icons.navigate_next),
             ),
-          )
-        ],
-
-      ),
-      );
+          ),
+    ],
+      )
+    );
   }
 }
